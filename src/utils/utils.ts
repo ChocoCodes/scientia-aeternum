@@ -1,7 +1,7 @@
 type ModuleContent = {
-    num: number;
+    module: number;
     title: string | "No Title Available";
-    img: string | null;
+    image: string;
     content: string | "No Content Available";
 }
 
