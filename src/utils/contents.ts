@@ -1,6 +1,7 @@
 import { ModuleContent } from './utils';
 import textBlocks from './textblocks';
 
+// ./src/ - prefix with this later
 const contents: ModuleContent[] = [
     {
         module: 1,
