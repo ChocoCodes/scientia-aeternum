@@ -12,7 +12,7 @@ export default function Button({ onMainPage }: PageTrackerProp) {
                 <img src={ onMainPage ? GithubIcon : LeftArrowIcon } 
                      alt={ onMainPage ? `Github Icon` : `Left Arrow Icon` }
                 />
-                <p>{ onMainPage ? `My Github` : `Back` }</p>
+                <p className={ !onMainPage ? 'back' : '' }>{ onMainPage ? `My Github` : `Back` }</p>
             </div>
         </button>
     )
