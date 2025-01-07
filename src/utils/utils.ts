@@ -5,4 +5,8 @@ type ModuleContent = {
     content: string | "No Content Available";
 }
 
-export type { ModuleContent };
+interface PageTrackerProp {
+    onMainPage: boolean;
+}
+
+export type { ModuleContent, PageTrackerProp };

@@ -1,4 +1,6 @@
 import './styles/App.css';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import type { ModuleContent } from './utils/utils';
 import Header from './components/component/Header';
 import Footer from './components/component/Footer';
@@ -6,13 +8,18 @@ import Hero from './components/component/Hero';
 import Card from './components/component/Card';
 import Content from './components/section/Content';
 import contents from './utils/contents';
-import { Routes, Route } from 'react-router-dom';
 
 function App() {
+  const [onMainPage, setOnMainPage] = useState<boolean>(true);
+  const location = useLocation();
 
+  useEffect(() => {
+    setOnMainPage(location.pathname === '/');
+  }, [location]);
+  
   return (
     <>
-      <Header />
+      <Header onMainPage={ onMainPage }/>
       <Routes>
         <Route path="/" element={
           <>

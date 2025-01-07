@@ -1,15 +1,12 @@
-const Header = () => {
+import { PageTrackerProp } from '../../utils/utils';
+import Button from '../component/Button';
+
+export default function Header ({ onMainPage } : PageTrackerProp) {
     return (
         <header>
-            <h2>Scientia Aeternum</h2>
-            <button onClick={ () => window.open('https://github.com/ChocoCodes', '_blank') }>
-                <div className="to-github">
-                    <img src="./src/assets/Github.svg" alt="Github Account" />
-                    <p>My Github</p>
-                </div>
-            </button>
+            { onMainPage && <h2>Scientia Aeternum</h2> }
+            <Button onMainPage={ onMainPage } />
+            { !onMainPage && <h2>Scientia Aeternum</h2> }
         </header>
     );
 }
-
-export default Header;
