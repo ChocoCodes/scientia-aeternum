@@ -87,9 +87,74 @@ header h2 {
 
 .hero #title {
   font-size: 2.5rem;
+  color: #000000;
+  font-weight: 500;
 }
+
 .hero p {
   font-size: 1.5rem;
   width: 41rem;
   color: #707070;
+}
+
+.card-display {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 3.63rem 6.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  width: 20.375rem;
+  height: 17.5625rem;
+  border-radius: 1.35269rem;
+  background: #F2F2F2;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  padding: 0 1.13rem;
+}
+
+.card:hover {
+  transition: 0.5s background-color ease;
+  background-color: #171717;
+  cursor: pointer;
+  h1,
+  a {
+    color: #FFFF28;
+  }
+
+}
+
+.card img {
+  width: 18.125rem;
+  height: 8.875rem;
+  border-radius: 0.625rem;
+  margin-top: 1.06rem;
+}
+
+.card h1 {
+  color: #000000;
+}
+
+.card a {
+  text-decoration: none;
+  color: #707070;
+}
+
+footer {
+  padding-bottom: 1.5rem;
+  color: #707070;
+}
+
+footer a {
+  text-decoration: none;
+  color: #707070;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
