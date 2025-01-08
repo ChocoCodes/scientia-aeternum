@@ -8,7 +8,7 @@ export default function Button({ onMainPage }: PageTrackerProp) {
             window.open('https://github.com/ChocoCodes', '_blank') :
             window.location.href = '/'
         }>
-            <div className="btn-content">
+            <div className={ onMainPage ? "main-btn-content" : "back-btn-content"}>
                 <img src={ onMainPage ? GithubIcon : LeftArrowIcon } 
                      alt={ onMainPage ? `Github Icon` : `Left Arrow Icon` }
                 />
