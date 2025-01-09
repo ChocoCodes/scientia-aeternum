@@ -12,7 +12,7 @@ export default function Content() {
     return ( 
         content &&
         <section className='content'>
-            <img src={ content.image } alt={ `Module ${ content.module } image` } />
+            <img src={ `.${ content.image }` } alt={ `Module ${ content.module } image` } />
             <h1>{ content.title }</h1>
             <p>{ content.content }</p>
         </section>

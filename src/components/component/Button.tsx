@@ -1,6 +1,6 @@
 import { PageTrackerProp } from '../../utils/utils';
-import GithubIcon from '../../../public/Github.svg';
-import LeftArrowIcon from '../../../public/larr.svg';
+import GithubIcon from '../../assets/icons/Github.svg';
+import LeftArrowIcon from '../../assets/icons/larr.svg';
 
 export default function Button({ onMainPage }: PageTrackerProp) {
     return (

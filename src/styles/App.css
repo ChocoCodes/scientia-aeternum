@@ -171,8 +171,9 @@ header .back-btn-content:hover {
 }
 
 .content img {
-  width: 80.125rem;
-  height: 27.688rem;
+  object-fit: cover;
+  width: 63.125rem;
+  height: 24.688rem;
   box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
