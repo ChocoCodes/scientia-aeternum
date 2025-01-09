@@ -1,10 +1,11 @@
-import { ModuleContent } from '../../utils/utils';
 import { useParams } from 'react-router-dom';
+import { ModuleContent } from '../../utils/utils';
 import contents from '../../utils/contents';
 
 export default function Content() {
     const { id } = useParams();
     const content: ModuleContent | undefined = contents.find((content: ModuleContent) => content.module === Number(id));
+    console.log(content);
     if(!content) {
         return <p>Content not found.</p>;
     }
@@ -12,7 +13,7 @@ export default function Content() {
     return ( 
         content &&
         <section className='content'>
-            <img src={ `.${ content.image }` } alt={ `Module ${ content.module } image` } />
+            <img src={ content.image } alt={ `Module ${ content.module } image` } />
             <h1>{ content.title }</h1>
             <p>{ content.content }</p>
         </section>
