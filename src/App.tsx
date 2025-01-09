@@ -38,7 +38,7 @@ function App() {
           <Content />
         }/>
       </Routes>
-      <Footer />
+      <Footer onMainPage={ onMainPage }/>
     </>
   );
 }
