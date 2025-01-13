@@ -221,4 +221,10 @@ footer a:hover {
   .content img {
     width: 101.125rem;
   }
+
+  /* Stick the content to the bottom of the screen [brute-force] */
+  .content-footer {
+    position: fixed;
+    padding-top: 0;
+  }
 }
