@@ -5,7 +5,6 @@ import contents from '../../utils/contents';
 export default function Content() {
     const { id } = useParams();
     const content: ModuleContent | undefined = contents.find((content: ModuleContent) => content.module === Number(id));
-    console.log(content);
     if(!content) {
         return <p>Content not found.</p>;
     }
