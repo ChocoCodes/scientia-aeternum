@@ -221,6 +221,11 @@ footer a:hover {
   .content img {
     width: 101.125rem;
   }
+  
+  .card-display {
+    margin: auto;
+    width: 95%;
+  }
 
   /* Stick the content to the bottom of the screen [brute-force] */
   .content-footer {
